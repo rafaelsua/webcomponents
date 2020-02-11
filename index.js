@@ -3,9 +3,7 @@
 
 import "@webcomponents/webcomponentsjs/webcomponents-bundle";
 import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
-
-
-class HTMLPasswordExtra extends HTMLInputElement {
+class HTMLPasswordExtra extends HTMLElement {
 
   static get is() { return 'extra-password-checked' }
 
@@ -35,4 +33,4 @@ class HTMLPasswordExtra extends HTMLInputElement {
   adopedCallback() { }
 }
 
-customElements.define(HTMLPasswordExtra.is, HTMLPasswordExtra, {extends: 'input'})
+customElements.define(HTMLPasswordExtra.is, HTMLPasswordExtra);
